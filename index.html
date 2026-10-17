@@ -1,244 +1,225 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Portfolio website for Piyush Chavan, featuring projects, coding profiles, and contact links."
-    />
-    <title>Piyush Chavan | Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="#home" aria-label="Piyush Chavan home">PC</a>
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#profiles">Profiles</a>
-        <a href="#contact">Contact</a>
-        <a
-          class="nav-resume"
-          href="https://drive.google.com/file/d/1Q9P8JjJ64iDhWjzE6mQ46iEvKEIrE0Ho/view?usp=sharing"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Resume
-        </a>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Piyush Chavan, a Computer Science student at VIT Vellore building backend systems, ML projects and solving DSA problems." />
+  <title>Piyush Chavan | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#top" aria-label="Home">PC</a>
+    <nav aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#profiles">Profiles</a>
+      <a href="#contact">Contact</a>
+      <a class="resume" target="_blank" rel="noreferrer"
+         href="https://drive.google.com/file/d/1Q9P8JjJ64iDhWjzE6mQ46iEvKEIrE0Ho/view?usp=sharing">Resume ↗</a>
+    </nav>
+  </header>
 
-    <main>
-      <section class="hero section" id="home">
-        <div class="hero-copy">
-          <h1>Piyush Chavan</h1>
-          <p class="hero-text">
-            Passionate Computer Science student focused on building scalable
-            software, solving algorithmic problems, and applying machine
-            learning and data analytics to real-world challenges.
-          </p>
-          <div class="hero-actions" aria-label="Primary links">
-            <a class="button primary" href="#projects">View projects</a>
-            <a class="button ghost" href="https://github.com/PC003" target="_blank" rel="noreferrer">
-              GitHub
-            </a>
-          </div>
-        </div>
+  <main id="top">
+    <section class="hero">
+      <p class="muted">B.Tech CSE · VIT Vellore · 2024–2028</p>
+      <h1>Piyush Chavan</h1>
+      <p class="lead">
+        I build backend systems and machine learning projects, and I practice
+        data structures and algorithms every week.
+      </p>
+      <div class="actions">
+        <a class="btn solid" href="#projects">View projects</a>
+        <a class="btn" href="https://github.com/PC003" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </div>
+      <dl class="stats">
+        <div><dt>CGPA</dt><dd>9.15</dd></div>
+        <div><dt>GitHub repos</dt><dd>21</dd></div>
+        <div><dt>LeetCode</dt><dd>285+</dd></div>
+        <div><dt>Codeforces</dt><dd>866</dd></div>
+      </dl>
+    </section>
 
-        <aside class="profile-panel" aria-label="Profile summary">
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I'm a Computer Science undergraduate at VIT Vellore with a 9.15 CGPA.
+        My work covers REST APIs, AI systems, machine learning pipelines and
+        data analytics, and I solve problems on LeetCode and Codeforces to
+        keep my fundamentals sharp.
+      </p>
+      <ul class="tags" aria-label="Skills">
+        <li>Python</li><li>C++</li><li>JavaScript</li><li>Java</li><li>SQL</li>
+        <li>FastAPI</li><li>Node.js</li><li>Express</li><li>REST APIs</li>
+        <li>PostgreSQL</li><li>MongoDB</li><li>RAG</li><li>LLMs</li><li>NLP</li>
+        <li>Machine Learning</li><li>Pandas</li><li>NumPy</li><li>Scikit-learn</li>
+        <li>XGBoost</li><li>CatBoost</li><li>Streamlit</li><li>DSA</li>
+        <li>HTML</li><li>CSS</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul class="list">
+        <li>
           <div>
-            <p class="panel-title">Portfolio snapshot</p>
-            <p class="panel-subtitle">Piyush Chavan | PC003</p>
+            <h3>Active Software Consultancy &amp; Research Pvt. Ltd.</h3>
+            <p>Internship focused on machine learning and data analytics.</p>
           </div>
-          <dl class="stats-grid">
-            <div>
-              <dt>Repos</dt>
-              <dd>21</dd>
-            </div>
-            <div>
-              <dt>LeetCode</dt>
-              <dd>230+</dd>
-            </div>
-            <div>
-              <dt>DSA</dt>
-              <dd>Practice</dd>
-            </div>
-            <div>
-              <dt>Focus</dt>
-              <dd>Web + ML</dd>
-            </div>
-          </dl>
-          <a
-            class="panel-link"
-            href="https://leetcode.com/u/Piyush_chavan003-/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Open LeetCode profile
-          </a>
-        </aside>
-      </section>
-
-      <section class="section split" id="about">
-        <div>
-          <p class="eyebrow">About</p>
-          <h2>Clean interfaces, useful systems, and steady problem solving.</h2>
-        </div>
-        <div class="about-copy">
-          <p>
-            I am pursuing B.Tech in Computer Science at VIT Vellore with a
-            9.15 CGPA. My work spans backend APIs, AI systems, machine learning
-            pipelines, data analytics, and DSA practice across LeetCode and
-            Codeforces.
-          </p>
-          <div class="resume-highlights" aria-label="Resume highlights">
-            <article>
-              <span>Education</span>
-              <strong>VIT Vellore</strong>
-              <p>B.Tech CSE, 2024-2028</p>
-            </article>
-          </div>
-          <div class="skill-cloud" aria-label="Skills">
-            <span>JavaScript</span>
-            <span>Python</span>
-            <span>C++</span>
-            <span>Java</span>
-            <span>SQL</span>
-            <span>FastAPI</span>
-            <span>REST APIs</span>
-            <span>PostgreSQL</span>
-            <span>MongoDB</span>
-            <span>RAG</span>
-            <span>LLMs</span>
-            <span>NLP</span>
-            <span>Backend</span>
-            <span>Machine Learning</span>
-            <span>Pandas</span>
-            <span>NumPy</span>
-            <span>Scikit-learn</span>
-            <span>XGBoost</span>
-            <span>CatBoost</span>
-            <span>Jupyter</span>
-            <span>DSA</span>
-            <span>HTML</span>
-            <span>CSS</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" aria-labelledby="featured-title">
-        <div class="section-heading">
-          <p class="eyebrow">Featured</p>
-          <h2 id="featured-title">Selected projects</h2>
-        </div>
-        <div class="featured-grid">
-          <article class="project-card featured">
-            <div>
-              <p class="project-meta">Python | Pandas | CatBoost</p>
-              <h3>Multibagger</h3>
-              <p>
-                Stock analytics and prediction work using financial data,
-                engineered features, and machine learning models.
-              </p>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/PC003/Multibagger" target="_blank" rel="noreferrer">
-                Code
-              </a>
-            </div>
-          </article>
-          <article class="project-card featured">
-            <div>
-              <p class="project-meta">FastAPI | PostgreSQL | RAG</p>
-              <h3>Research Platform</h3>
-              <p>
-                AI-powered undergraduate research discovery platform with
-                semantic search, REST APIs, and planned RAG summarization.
-              </p>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/PC003/Research_platform" target="_blank" rel="noreferrer">
-                Code
-              </a>
-            </div>
-          </article>
-          <article class="project-card featured">
-            <div>
-              <p class="project-meta">XGBoost | SQL | Streamlit</p>
-              <h3>ParkPlus-Ai</h3>
-              <p>
-                Congestion analytics and ML system for predicting next-hour
-                parking hotspot risk from temporal and spatial patterns.
-              </p>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/PC003/ParkPlus-Ai" target="_blank" rel="noreferrer">
-                Code
-              </a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="projects">
-        <div class="section-heading projects-heading">
+        </li>
+        <li>
           <div>
-            <p class="eyebrow">Projects</p>
-            <h2>All public GitHub repositories</h2>
+            <h3>Konnichiwow</h3>
+            <p>Software development internship using Node.js, Express and MongoDB.</p>
           </div>
-          <div class="filters" aria-label="Project filters">
-            <button class="filter active" type="button" data-filter="all">All</button>
-            <button class="filter" type="button" data-filter="JavaScript">JavaScript</button>
-            <button class="filter" type="button" data-filter="Python">Python</button>
-            <button class="filter" type="button" data-filter="Other">Other</button>
-          </div>
-        </div>
-        <div class="project-grid" id="projectGrid"></div>
-      </section>
+        </li>
+      </ul>
+    </section>
 
-      <section class="section profile-strip" id="profiles">
+    <section id="featured">
+      <h2>Featured</h2>
+      <ul class="list">
+        <li>
+          <div>
+            <h3>Multibagger</h3>
+            <p>Stock analytics and prediction using financial data, engineered features and ML models.</p>
+            <p class="meta">Python · Pandas · CatBoost</p>
+          </div>
+          <a href="https://github.com/PC003/Multibagger" target="_blank" rel="noreferrer">Code ↗</a>
+        </li>
+        <li>
+          <div>
+            <h3>Research Platform</h3>
+            <p>AI-powered undergraduate research discovery platform with semantic search, REST APIs and planned RAG summarization.</p>
+            <p class="meta">FastAPI · PostgreSQL · RAG</p>
+          </div>
+          <a href="https://github.com/PC003/Research_platform" target="_blank" rel="noreferrer">Code ↗</a>
+        </li>
+        <li>
+          <div>
+            <h3>ParkPlus-Ai</h3>
+            <p>Congestion analytics and ML system that predicts next-hour parking hotspot risk from temporal and spatial patterns.</p>
+            <p class="meta">XGBoost · SQL · Streamlit</p>
+          </div>
+          <a href="https://github.com/PC003/ParkPlus-Ai" target="_blank" rel="noreferrer">Code ↗</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <div class="row">
+        <h2>All repositories</h2>
+        <div class="filters" role="group" aria-label="Project filters">
+          <button class="filter active" type="button" data-filter="all">All</button>
+          <button class="filter" type="button" data-filter="JavaScript">JavaScript</button>
+          <button class="filter" type="button" data-filter="Python">Python</button>
+          <button class="filter" type="button" data-filter="Other">Other</button>
+        </div>
+      </div>
+      <ul class="list compact" id="projectList"></ul>
+    </section>
+
+    <section id="profiles">
+      <h2>Profiles</h2>
+      <div class="profiles">
         <a href="https://leetcode.com/u/Piyush_chavan003-/" target="_blank" rel="noreferrer">
-          <span>LeetCode</span>
-          <strong>Piyush_chavan003-</strong>
+          <span class="muted">LeetCode</span>
+          <strong>285+ solved</strong>
+          <small>Rank 530,284 · 3 badges</small>
         </a>
         <a href="https://codeforces.com/profile/piyushchavan003" target="_blank" rel="noreferrer">
-          <span>Codeforces</span>
-          <strong>piyushchavan003 | 866</strong>
-        </a>
-        <a href="https://www.linkedin.com/in/piyush-chavan-5610a1272/" target="_blank" rel="noreferrer">
-          <span>LinkedIn</span>
-          <strong>Piyush Chavan</strong>
+          <span class="muted">Codeforces</span>
+          <strong>Rating 866</strong>
+          <small>56 problems solved</small>
         </a>
         <a href="https://github.com/PC003?tab=repositories" target="_blank" rel="noreferrer">
-          <span>GitHub</span>
-          <strong>PC003 | 21 repos</strong>
+          <span class="muted">GitHub</span>
+          <strong>PC003</strong>
+          <small>21 repositories</small>
         </a>
-      </section>
+        <a href="https://www.linkedin.com/in/piyush-chavan-5610a1272/" target="_blank" rel="noreferrer">
+          <span class="muted">LinkedIn</span>
+          <strong>Piyush Chavan</strong>
+          <small>Let's connect</small>
+        </a>
+      </div>
+    </section>
 
-      <section class="section contact" id="contact">
-        <p class="eyebrow">Contact</p>
-        <h2>Let's build something useful.</h2>
-        <p>
-          The fastest way to review my work is through GitHub. You can also
-          connect with me on LinkedIn for internships, collaborations, and
-          project discussions.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="https://www.linkedin.com/in/piyush-chavan-5610a1272/" target="_blank" rel="noreferrer">
-            LinkedIn
-          </a>
-          <a class="button ghost" href="https://github.com/PC003" target="_blank" rel="noreferrer">
-            GitHub
-          </a>
-        </div>
-      </section>
-    </main>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        I'm open to internships, collaborations and project discussions.
+        The quickest way to reach me is email or LinkedIn.
+      </p>
+      <div class="actions">
+        <a class="btn solid" href="mailto:piyushchavan003@gmail.com">Email me</a>
+        <a class="btn" href="https://www.linkedin.com/in/piyush-chavan-5610a1272/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+      </div>
+    </section>
+  </main>
 
-    <footer class="footer">
-      <p>&copy; 2026 Piyush Chavan.</p>
-    </footer>
+  <footer class="footer">
+    <p>&copy; 2026 Piyush Chavan</p>
+  </footer>
 
-    <script src="script.js"></script>
-  </body>
+  <script>
+    const projects = [
+      { name: "Multibagger", description: "Jupyter Notebook project for stock analysis and experimentation.", url: "https://github.com/PC003/Multibagger", homepage: "", language: "Jupyter Notebook", updated: "2026-07-29" },
+      { name: "PC003", description: "Config files for the GitHub profile.", url: "https://github.com/PC003/PC003", homepage: "https://github.com/PC003", language: "Other", updated: "2026-07-29" },
+      { name: "Research_platform", description: "Python project focused on research-oriented workflows.", url: "https://github.com/PC003/Research_platform", homepage: "", language: "Python", updated: "2026-07-29" },
+      { name: "SuyashLab", description: "Frontend page for a lab, deployed on Vercel.", url: "https://github.com/PC003/SuyashLab", homepage: "https://suyash-lab.vercel.app", language: "JavaScript", updated: "2026-07-19" },
+      { name: "website", description: "JavaScript website project.", url: "https://github.com/PC003/website", homepage: "", language: "JavaScript", updated: "2026-07-09" },
+      { name: "ParkPlus-Ai", description: "Python AI project inspired by parking and mobility workflows.", url: "https://github.com/PC003/ParkPlus-Ai", homepage: "", language: "Python", updated: "2026-06-20" },
+      { name: "PYTHON", description: "Python practice and learning repository.", url: "https://github.com/PC003/PYTHON", homepage: "", language: "Python", updated: "2026-06-06" },
+      { name: "Brain-Dump-Board", description: "Web app for capturing and organizing ideas.", url: "https://github.com/PC003/Brain-Dump-Board", homepage: "https://pc003.github.io/Brain-Dump-Board/", language: "JavaScript", updated: "2026-04-07" },
+      { name: "mlproject", description: "Python machine learning project.", url: "https://github.com/PC003/mlproject", homepage: "", language: "Python", updated: "2026-04-06" },
+      { name: "DSA-Patterns-Roadmap", description: "Roadmap and notes for learning DSA patterns.", url: "https://github.com/PC003/DSA-Patterns-Roadmap", homepage: "", language: "Other", updated: "2026-02-26" },
+      { name: "Regression-Model-Comparison", description: "Comparison of regression model approaches.", url: "https://github.com/PC003/Regression-Model-Comparison", homepage: "", language: "Other", updated: "2026-02-14" },
+      { name: "Portfolio", description: "A simple portfolio using Flask and Python.", url: "https://github.com/PC003/Portfolio", homepage: "", language: "Other", updated: "2026-01-17" },
+      { name: "9Pointer", description: "JavaScript web project published with GitHub Pages.", url: "https://github.com/PC003/9Pointer", homepage: "", language: "JavaScript", updated: "2025-12-19" },
+      { name: "complete-pandas-tutorial", description: "Comprehensive tutorial on the Python Pandas library.", url: "https://github.com/PC003/complete-pandas-tutorial", homepage: "", language: "Other", updated: "2025-11-20" },
+      { name: "Webprojects", description: "Collection of JavaScript web projects.", url: "https://github.com/PC003/Webprojects", homepage: "", language: "JavaScript", updated: "2025-09-16" },
+      { name: "Simple-Feedback-Collection-App", description: "Feedback collection app built as a learning project.", url: "https://github.com/PC003/Simple-Feedback-Collection-App", homepage: "", language: "JavaScript", updated: "2025-07-30" },
+      { name: "BackendChai", description: "Backend learning project.", url: "https://github.com/PC003/BackendChai", homepage: "", language: "JavaScript", updated: "2025-07-24" },
+      { name: "Amazon", description: "Amazon clone built for frontend practice.", url: "https://github.com/PC003/Amazon", homepage: "", language: "JavaScript", updated: "2025-06-18" },
+      { name: "backendL", description: "Backend learning project.", url: "https://github.com/PC003/backendL", homepage: "", language: "JavaScript", updated: "2025-06-15" },
+      { name: "Javascript-repo", description: "JavaScript practice repository.", url: "https://github.com/PC003/Javascript-repo", homepage: "", language: "JavaScript", updated: "2025-04-16" },
+      { name: "portfolio-website", description: "Earlier portfolio website built with HTML and CSS.", url: "https://github.com/PC003/portfolio-website", homepage: "", language: "Other", updated: "2025-01-10" }
+    ];
+
+    const list = document.querySelector("#projectList");
+    const buttons = document.querySelectorAll(".filter");
+
+    const category = (lang) => (lang === "JavaScript" || lang === "Python" ? lang : "Other");
+
+    function render(filter = "all") {
+      list.innerHTML = projects
+        .filter((p) => filter === "all" || category(p.language) === filter)
+        .map((p) => `
+          <li>
+            <div>
+              <h3>${p.name}</h3>
+              <p>${p.description}</p>
+              <p class="meta">${p.language} · Updated ${p.updated}</p>
+            </div>
+            <span class="links">
+              ${p.homepage ? `<a href="${p.homepage}" target="_blank" rel="noreferrer">Live ↗</a>` : ""}
+              <a href="${p.url}" target="_blank" rel="noreferrer">Code ↗</a>
+            </span>
+          </li>`)
+        .join("");
+    }
+
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        buttons.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        render(btn.dataset.filter);
+      });
+    });
+
+    render();
+  </script>
+</body>
 </html>
